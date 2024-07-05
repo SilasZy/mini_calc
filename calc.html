@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+   <input type="text" name="" id="texto" placeholder="entre com um numero...">   <input type="text" name="" id="texto1" placeholder="entre com um numero..."> <button id="button">calcular</button>
+<div id="resultado"></div>
+
+<script>
+
+var button= document.getElementById('button');
+
+button.addEventListener('click', function() {
+    var texto = parseFloat(document.getElementById('texto').value);
+    var texto1 = parseFloat(document.getElementById('texto1').value);
+    var multiplicacao= texto * texto1;
+
+document.getElementById('resultado').innerText= multiplicacao;
+
+
+
+})
+
+
+</script>
+</body>
+</html>
